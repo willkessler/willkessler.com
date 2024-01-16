@@ -19,8 +19,21 @@ header {
 }
 
 .main-header-subtitle {
+  margin-top:-5px;
   font-size:24px;
   text-align:left;
+}
+
+.main-header-subsubtitle {
+  padding-top:5px;
+  font-size:14px;
+  text-align:left;
+}
+
+.main-header-subsubtitle a {
+  color:#fff;
+  text-decoration:none;
+  font-weight:800;
 }
 
 footer {
