@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/base.css">
+    <style>
+    </style>
+    <title>Will Kessler, Product Leader</title>
+  </head>
+  <body>
+
+    <header>
+      <div class="main-header-title">Will Kessler</div>
+      <div class="main-header-subtitle">Product Leader</div>
+    </header>
+
+    <div class="main">
+      {% for job in collections.jobs %}
+      <div class="row">
+        <div class="image-cell">
+          <a href="{{ job.data.image_url }}"><img src="{{ job.data.image }}" alt="Image"></a>
+        </div>
+        <div class="text-cell">
+          {{ job.templateContent }}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <footer>
+      <p>&copy; 2024 Will Kessler. All rights reserved.</p>
+    </footer>
+
+  </body>
+</html>
